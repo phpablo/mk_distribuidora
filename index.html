@@ -1,116 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-<title>MK Distribuidora</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-
-  <style>
-  body {
-    font-family: "Roboto", serif;
-    background-color: #fff8e1; /* amarelo claro (cerveja) */
-    color: #180f0d; /* marrom rústico */
-    margin: 0;
-    padding: 0;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Playfair Display", serif;
-    letter-spacing: 2px;
-    color: #241815; /* marrom escuro */
-    margin-bottom: 0.5rem;
-  }
-
-  a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-    color: #5d4037;
-  }
-
-  ul {
-    padding-left: 1.2rem;
-  }
-
-  section {
-    margin-bottom: 2rem;
-  }
-
-  .highlight {
-    color: #ffb917; /* amarelo vibrante */
-    font-weight: bold;
-  }
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MK Distribuidora - Bebidas Premium</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-dark-grey w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">MK Distribuidora</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">Sobre</a>
-      <!-- <a href="#menu" class="w3-bar-item w3-button">Produtos</a> -->
-      <a href="#contact" class="w3-bar-item w3-button">Contato</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <i class="fas fa-beer me-2"></i>MK Distribuidora
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <h1 id="hero-title-main" class="hero-title">MK Distribuidora</h1>
+      <p class="hero-subtitle">Bebidas premium entregues na temperatura perfeita</p>
+      <a href="#contact" class="btn btn-primary btn-lg">
+        <i class="fas fa-phone-alt me-2"></i>Faça seu pedido
+      </a>
+    </div>
+  </section>
+
+  <!-- Page content -->
+  <div class="container my-5">
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="assets/images/fachadaMk.webp" class="about-img img-fluid" alt="MK Distribuidora">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="section-title text-center">Sobre Nós</h2>
+          <p class="lead">A MK Distribuidora nasceu com um objetivo claro: entregar bebidas sempre <strong>na temperatura ideal</strong> e proporcionar uma experiência única aos nossos clientes.</p>
+          <p>Se você é do time que aprecia uma boa bebida gelada, nosso foco é garantir que seu momento seja perfeito, seja um churrasco entre amigos, um jantar especial ou aquela comemoração. Aqui, a qualidade das bebidas e o atendimento personalizado estão garantidos, porque para nós, o momento só fica completo com a bebida certa!</p>
+          <div class="d-flex justify-content-center mt-4">
+            <div class="me-4 text-center">
+              <i class="fas fa-award fa-2x mb-2" style="color: var(--dourado);"></i>
+              <h5>Qualidade</h5>
+            </div>
+            <div class="me-4 text-center">
+              <i class="fas fa-shipping-fast fa-2x mb-2" style="color: var(--dourado);"></i>
+              <h5>Agilidade</h5>
+            </div>
+            <div class="text-center">
+              <i class="fas fa-temperature-low fa-2x mb-2" style="color: var(--dourado);"></i>
+              <h5>Sempre Gelada</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- Products Section (Placeholder) -->
+    <section id="products" class="py-5">
+      <h2 class="section-title text-center">Nossos Produtos</h2>
+      <p class="text-center mb-5">Oferecemos uma seleção premium das melhores bebidas do mercado</p>
+      
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://via.placeholder.com/300x200?text=Cervejas" class="card-img-top" alt="Cervejas">
+            <div class="card-body">
+              <h5 class="card-title">Cervejas</h5>
+              <p class="card-text">As melhores marcas nacionais e importadas, sempre geladas.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://via.placeholder.com/300x200?text=Destilados" class="card-img-top" alt="Destilados">
+            <div class="card-body">
+              <h5 class="card-title">Destilados</h5>
+              <p class="card-text">Whisky, vodka, gin e outras bebidas premium.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://via.placeholder.com/300x200?text=Vinhos" class="card-img-top" alt="Vinhos">
+            <div class="card-body">
+              <h5 class="card-title">Vinhos</h5>
+              <p class="card-text">Seleção especial de vinhos nacionais e importados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <h2 class="section-title text-center">Contato</h2>
+      <div class="row">
+        <div class="col-lg-12 mb-4 mb-lg-0">
+          <div class="contact-info">
+            <h4 class="mb-4">Entre em Contato</h4>
+            <p><i class="fas fa-map-marker-alt contact-icon"></i> Rua Ezequiel Majaci de Lucena, Nº 2123– Bairro Porto, Brasilândia de Minas - MG</p>
+            <p><i class="fas fa-phone contact-icon"></i> (38) 99994-4029</p>
+            <p><i class="fab fa-whatsapp contact-icon"></i> <a href="http://wa.me/5538999944029" target="_blank">WhatsApp</a></p>
+            <p><i class="fas fa-clock contact-icon"></i> Horário de funcionamento: Ter-Sáb: 9h-22h | Dom: 9h-17h</p>
+            
+           
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="http://wa.me/5538999944029" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <div class="mt-4">
+    <h5>Nossa Localização</h5>
+    <div class="ratio ratio-16x9 mt-3">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3177.2870254876284!2d-46.01599842829674!3d-17.02350630570449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sEzequiel%20Majaci%20de%20Lucena%2CBairro%20Porto%2C%20Brasil%C3%A2ndia%20de%20Minas%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1746537728857!5m2!1spt-BR!2sbr" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
     </div>
   </div>
-</div>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="assets/images/background.jpg" alt="Hamburger Catering" width="1600" height="500">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-  </div>
-</header>
-
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
-
-  <!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="assets/images/fachadaMk.webp" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+  <!-- Footer -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5><i class="fas fa-beer me-2"></i>MK Distribuidora</h5>
+          <p>Distribuidora de bebidas premium, entregando qualidade e satisfação desde o primeiro gole.</p>
+        </div>
+        
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5>Links Rápidos</h5>
+          <div class="footer-links d-flex flex-column">
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#products">Produtos</a>
+            <a href="#contact">Contato</a>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <h5>Contato</h5>
+          <p><i class="fas fa-map-marker-alt me-2"></i> Rua Ezequiel Majaci de Lucena, Nº 2123</p>
+          <p><i class="fas fa-phone me-2"></i> (38) 99994-4029</p>
+        </div>
+      </div>
+      
+      <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+      
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p>&copy; 2025 MK Distribuidora. Todos os direitos reservados.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p>Desenvolvido com cerveja gelada e <i class="fas fa-heart" style="color: var(--dourado);"></i> por <a href="https://www.instagram.com/d.de.dev/" target="_blank" style="color: var(--dourado);">Pablo Henrique</a></p>
+        </div>
+      </div>
     </div>
+  </footer>
 
-    <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">Sobre a MK Distribuidora</h1><br>
-      <h5 class="w3-center">Desde 2025</h5>
-      <p class="w3-large">Na MK Distribuidora, a missão é simples: entregar bebidas de qualidade, com a cerveja sempre <strong>trincando de gelada</strong>, direto até você. Seja pra aquele churrasco de última hora, o esquenta com os amigos ou só pra relaxar depois do trampo, a gente garante variedade, rapidez e atendimento de parceiro. Aqui, cada pedido é tratado como se fosse pra nossa própria resenha —<strong> porque a festa só começa de verdade com a bebida certa!</strong></p>
-    </div>
-  </div>
-  
-  <hr>
-
-  <hr>
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-64" id="contact">
-    <h1>Contato</h1><br>
-    <p>Oferecemos entrega completa de bebidas para qualquer ocasião, grande ou pequena. Sabemos exatamente o que você precisa: variedade, agilidade e aquela cerveja trincando de gelada. Cuidamos de tudo para que sua experiência seja impecável — no visual e, principalmente, no sabor. Não pense duas vezes: entre em contato com a gente e garanta a bebida certa para o seu momento.</p>
-    <p class="w3-text-blue-grey w3-large"><b>MK Distribuidora , Rua Ezequiel Majaci de Lucena, Nº 2123– Bairro Porto, Brasilândia de Minas - MG</b></p>
-    <p>Você também pode falar com a gente pelo telefone e whatsapp por aqui <a href="http://wa.me/5538999944029" target="_blank">(38) 99994-4029</a></p>
-    
-  
-  </div>
-  
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-dark-grey w3-padding-32">
-  <p>&copy; 2025 MK Distribuidora . Todos os direitos reservados.</p>
-  <p>Desenvolvido com 💛 e cerveja gelada.</p>
-  <p>Created by: <a href="https://www.instagram.com/d.de.dev/">Pablo Henrique</a></p>
-  <p>Rua Ezequiel Majaci de Lucena, Nº 2123– Bairro Porto, Brasilândia de Minas - MG</p>
-  <p>Contato: (38) 99994-4029 | WhatsApp: <a href="http://wa.me/5538999944029" target="_blank">Clique aqui</a></p>
-</footer>
-
-
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
